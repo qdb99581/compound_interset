@@ -1,5 +1,5 @@
 # Set initial values
-init_principal = 1000
+init_principal = 0
 profit = 0.042
 monthly_fixed_purchase = 1000
 n_months = 14
@@ -21,3 +21,4 @@ total_investment = sum(monthly_new_shares['invest'])
 print(f"After {n_months} months, you will have {principal} shares.")
 print(f'From {init_principal} to {principal}, ROI is: {(principal - init_principal - total_investment)*price_per_share/total_investment:.2f}%')
 print(f'Earned {principal - init_principal - total_investment} shares = {(principal - init_principal - sum(monthly_new_shares["invest"])) * price_per_share} TWD')
+print(f'Invest: {total_investment}')
